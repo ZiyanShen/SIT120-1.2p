@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <script>
+    const str = "Hello, world!";
+    console.log(str.length);         
+    console.log(str.toUpperCase());   
+    console.log(str.indexOf("world")); 
+    console.log(str.slice(0, 5));     
+    console.log(str.replace("world", "universe")); 
+
+
+    const num = 42.75;
+    console.log(num.toFixed(1));   
+    console.log(num.toString());     
+    console.log(Math.round(num));    
+    console.log(Math.sqrt(num));     
+    console.log(Math.max(10, 20));   
+
+
+    const arr = [1, 2, 3, 4, 5];
+    console.log(arr.length);             
+    console.log(arr.join(", "));          
+    console.log(arr.push(6));              
+    console.log(arr.pop());                
+    console.log(arr.slice(1, 4));        
+
+    const now = new Date();
+    console.log(now.getFullYear());       
+    console.log(now.getMonth());          
+    console.log(now.getDate());            
+    console.log(now.getHours());           
+    console.log(now.getMinutes());        
+
+    function greet(name) {
+      console.log(`Hello, ${name}!`);
+    }
+    greet("Alice"); 
+    
+    const add = function(x, y) {
+      return x + y;
+    };
+    console.log(add(3, 5));
+  </script>
+</body>
+</html>
